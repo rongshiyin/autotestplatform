@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>AutotestPlat</title>
+<style> body{text-align:center} </style>
+</head>
+<body>
+<div>
+	<font size="1" color='red'>
+		<h1>自动化测试平台</h1>
+	</font>
+	
+	<form method="post" action="/login/">
+		{% csrf_token %}
+		<br> <input name="username" type="text" placeholder="username" >
+		<br> <input name="password" type="password" placeholder="password"><br>
+		{{ error }}<br>
+		<br> <button id="submit" type="submit">submit</button>
+	</form>
+</div>
+</body>
+</html>
